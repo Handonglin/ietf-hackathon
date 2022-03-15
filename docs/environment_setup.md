@@ -167,7 +167,7 @@ Now, the network map can be got via ALTO protocol:
 Then add an [example default cost map](../templates/alto_manual_costmap_config.template):
 
 ``` sh
-$ curl -u admin:admin -X PUT -H "Content-Type: application/json" -d "$(cat ../templates/alto_manual_networkmap_config.template)" http://localhost:8181/restconf/config/alto-manual-maps:config-context/00000000-0000-0000-0000-000000000000/resource-cost-map/default-costmap
+$ curl -u admin:admin -X PUT -H "Content-Type: application/json" -d "$(cat ../templates/alto_manual_costmap_config.template)" http://localhost:8181/restconf/config/alto-manual-maps:config-context/00000000-0000-0000-0000-000000000000/resource-cost-map/default-costmap
 
 HTTP/1.1 201 Created
 Set-Cookie: JSESSIONID=1n6dris5mngy51hdis0cpebhp7;Path=/restconf
